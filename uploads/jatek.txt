@@ -1,0 +1,68 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package játék;
+import java.util.Random;
+import java.util.Scanner;
+/**
+ *
+ * @author gkiss
+ */
+public class Játék {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Random rnd = new Random();
+        Scanner be = new Scanner(System.in, "Windows-1252");
+        String[] szavak = { "zabkása", "teherautó" ,"kalap","szellem","polip",
+        "papucs", "cipő"};
+        int max = szavak.length;
+        int index = rnd.nextInt(max);
+        String szo = szavak[index];
+        
+        int probalkozas = 5;
+        boolean[] talalatok = new boolean[szo.length()];
+        boolean nyert = false;
+        do {
+            String kitalalt = "";
+            for (int i =0; i<talalatok.length; i++){
+               if (talalatok [i] == true){
+                   kitalalt += szo.toCharArray()[i] + "";
+               } else {
+                   kitalalt += "?";
+               }
+            }
+            System.out.println(kitalalt);
+            System.out.println(probalkozas);
+            System.out.print("Adj meg egy betűt: ");
+            String betu = be.nextLine();
+            
+            boolean talalt = false;
+            for (int i = 0; i<szo.length(); i++){
+                if(szo.toCharArray() [i] == betu.toCharArray() [0]){
+                    talalatok[i] = true;
+                    talalt = true;
+                }
+            }
+            
+            int i = 0;
+            while(i<talalatok.length && talalatok[i] == true){
+                i++;
+            }
+            nyert = i==talalatok.length;
+            
+            if (!talalt) probalkozas --;
+        } while(!nyert && probalkozas > 0);
+        
+        if (nyert == true){
+            System.out.println("Nyertél");
+        }else {
+            System.out.println("Vesztettél");
+        }
+    }
+    
+}

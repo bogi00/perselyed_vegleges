@@ -1,0 +1,120 @@
+html {
+    font-family: 'Popins','sans-serif' !important;
+}
+h1{
+    color: white;
+}
+body {
+    background: radial-gradient(circle, rgb(0, 0, 0) 10%, rgb(25, 0, 255) 100%);
+}
+
+
+.input.group-addon:first-child {
+    margin-top: 9px;
+}
+
+.greenBorder {
+    border:1.5px solid #3abc4e;
+    transition: border 0.3s;
+}
+#loading {
+    display: none;
+}
+
+#tabla {
+    display:none;
+}
+
+#errorSzoveg {
+    display:none;
+}
+
+input[type="submit"]:link,
+input[type="submit"]:visited {
+    cursor:pointer;
+    transition:background 0.5s, border 0.5s, color 0.5s;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:active {
+    background-color:#e8e8eb1f;
+    border:1px solid rgb(230, 223, 223);
+    color:rgb(248, 243, 243);
+}
+
+.inputError {
+    border:1.5px solid #d9534f;
+    transition: border 0.5s;
+}
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #3abc4e;;
+    color: rgb(122, 164, 243);
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+#myBtn:hover {
+    background-color: #555;
+}
+.card{
+    max-width: 600px;
+    margin: 70px auto;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: black;
+}
+/** nav **/
+header {
+     background: linear-gradient(90deg, rgba(0,5,255,1) 0%, rgba(0,0,0,1) 100%);
+     width: 100%;
+     padding: 22px 30px;
+     height: 96px;
+     z-index: 9;
+}
+
+.logo a {
+     color: #fff;
+     font-size: 25px;
+     font-weight: bold;
+}
+
+ul.social_icon {
+     float: right;
+     padding-top: 6px;
+}
+
+ul.social_icon li {
+     display: inline-block;
+     padding-right: 20px;
+}
+
+ul.social_icon li:last-child {
+     padding-right: 0;
+}
+
+ul.social_icon li a {
+     color: #fefeff;
+     display: inline-block;
+     text-align: center;
+     line-height: 33px;
+     border-radius: 100%;
+     font-size: 23px;
+     font-weight: bold;
+}
+
+ul.social_icon li a:hover {
+     color: #6dcff6;
+     transition: ease-in all 0.7s;
+}
+container {
+    max-width: 1170px;
+}

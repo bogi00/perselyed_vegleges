@@ -1,0 +1,63 @@
+#quizWrap {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#quizQn {
+    padding: 20px;
+    color: #fff;
+    font-size: 24px;
+    border-radius: 10px;
+}
+
+#quizAns {
+    margin: 10px 0;
+}
+
+#quizAns label {
+    display: block; /* Hogy a válaszok egymás alatt legyenek */
+    background: #fafafa;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px; /* Távolság az egyes válaszok között */
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#quizAns label.correct {
+    background: green;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+#quizAns label.wrong {
+    background: red;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+#quizAns input[type=radio] {
+    display: none; /* Elrejtjük a radio gombokat */
+}
+
+* {
+    font-family: arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    background: radial-gradient(circle, rgb(0, 0, 0) 10%, rgb(25, 0, 255) 100%);
+}
+
+.widget-wrap {
+    width: 600px;
+    padding: 30px;
+    border-radius: 20px;
+    background: rgba(16, 15, 31, 0.4);
+}
+

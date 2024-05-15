@@ -1,0 +1,126 @@
+
+
+body {
+  color: #666666;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.80857;
+  font-weight: normal;
+  background: radial-gradient(circle, rgb(0, 0, 0) 10%, rgb(25, 0, 255) 100%);
+}
+
+.container {
+  max-width: 500px;
+  margin: 70px auto;
+  background: rgba(86, 185, 231, 0.1);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  color: white;
+
+  animation: container-show 1s ease-in-out forwards;
+}
+
+@keyframes container-show {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+input {
+  width: calc(100% - 16px);
+  padding: 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #4caf50;
+}
+
+input {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+
+input[type="submit"] {
+  background-color: #00a2ff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+  background-color: #3795d4;
+}
+
+.registration-button,
+.forgot-button {
+  background-color: #3899da
+  color: #fff;
+  cursor: pointer;
+}
+
+
+
+@keyframes button-hover {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+.registration-button,
+.forgot-button {
+  /* ... (előző tulajdonságok) ... */
+  background-color: #3899da; /* Kék szín */
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px; /* Lekerekített sarkok */
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: inline-block; /* Gombként jelenjen meg */
+  margin: 10px auto; /* Középre igazítás */
+  width: auto; /* Automatikus szélesség */
+  text-align: center; /* Szöveg középre igazítása */
+  display: inline-block; /* Gombként jelenjen meg */
+  margin: 10px 10px;
+}
+.registration-button:hover,
+.forgot-button:hover {
+}
+.registration-button:hover {
+  background-color: darkblue;
+}
+.registration-button{
+margin-right:30%;
+border-radius:15px;
+}
+.forgot-button:hover {
+  background-color: darkblue; 
+ 
+}
+
+/* Média lekérdezés a kisebb képernyőkhöz */
+@media (max-width: 575px) {
+  .forgot-button {
+    margin-top: 10px; /* Nagyobb margó kisebb képernyőkön */
+  }
+}
+
+
+
